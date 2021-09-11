@@ -1,2 +1,2 @@
-# konran
-Discord bot for the Stages feature
+# Myra 「まいら」
+Discord music bot for the Stages feature
