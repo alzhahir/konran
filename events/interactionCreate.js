@@ -9,13 +9,11 @@ client.commands = new Collection();
 const commandFiles = fs.readdirSync(path.join(__dirname, '..', 'commands')).filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
 	const command = require(`../commands/${file}`);
-	console.log('parse commands');
 	client.commands.set(command.data.name, command);
 }
 module.exports = {
     name: 'interactionCreate',
     async execute(interaction) {
-        console.log("creating interaction");
 		if (!interaction.isCommand()) return;
 
 	    const command = client.commands.get(interaction.commandName);
@@ -24,7 +22,6 @@ module.exports = {
 
 	    try {
 		    await command.execute(interaction);
-			console.log("command done");
 	    } catch (error) {
 		    console.error(error);
 		    return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
