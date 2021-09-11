@@ -1,0 +1,33 @@
+{
+  "name": "myra",
+  "version": "0.0.1",
+  "description": "Discord Radio bot for Stages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alzhahir/myra.git"
+  },
+  "keywords": [
+    "discord",
+    "radio",
+    "discordjs",
+    "discord.js"
+  ],
+  "author": "alzhahir",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/alzhahir/myra/issues"
+  },
+  "homepage": "https://github.com/alzhahir/myra#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.1.0",
+    "libsodium-wrappers": "^0.7.9"
+  }
+}
