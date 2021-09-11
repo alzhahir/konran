@@ -1,7 +1,7 @@
 module.exports = {
     name: 'ready',
     once:true,
-    execute(){
-        console.log(`Bot ready!`);
+    execute(client){
+        console.log(`Bot ready! Logged in as ${client.user.tag}.`);
     },
 };
